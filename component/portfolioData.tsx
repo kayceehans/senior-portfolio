@@ -14,7 +14,7 @@ export const portfolioData = {
     }
   ],
   techStack: {
-    backend: ["Backend => C#(.NET 8), Python(FastAPI|Django)", "Front-End => Javascript(React|Next.js)", "DateBase => SQL Server|PostgreSQL|EF Core", "Microservices|Azure DevOps|Docker|Kubernetes"],
+    backend: ["Backend => C#(.NET), Python(FastAPI|Django)", "Front-End => Javascript(React|Next.js)", "DateBase => SQL Server|PostgreSQL|EF Core", "Microservices|Azure DevOps|Docker|Kubernetes"],
    
   }
 };

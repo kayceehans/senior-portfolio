@@ -4,7 +4,7 @@ import { portfolioData } from '@/component/portfolioData';
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-20">
+    <main className="max-w-5xl mx-auto px-3 py-10">
       <section className="flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1">
           <h1 className="text-5xl font-bold mb-4">{portfolioData.name}</h1>
@@ -28,12 +28,12 @@ export default function Home() {
         </div>
       </section>
  {/* Stack Grid */}
-      <section className="mt-24">
+      <section className="mt-4">
         <h2 className="text-3xl font-bold mb-10">Tech Stacks</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {portfolioData.techStack.backend.map((acc, i) => (
-            <div key={i} className="p-1 bg-slate-900 border border-slate-400 rounded-xl">
-              <span className="text-blue-500 font-mono text-sm ">{acc}</span>
+            <div key={i} className="p-1 bg-blue-600 border border-slate-400 rounded-xl">
+              <span className="text-slate-300 font-mono text-sm ">{acc}</span>
               {/* <h3 className="text-xl font-semibold mt-2">{acc.frontend}</h3>
               <p className="text-slate-400 mt-2">{acc.cloud}</p> */}
             </div>
@@ -41,14 +41,14 @@ export default function Home() {
         </div>
       </section>
       {/* Accomplishments Grid */}
-      <section className="mt-24">
+      <section className="mt-4">
         <h2 className="text-3xl font-bold mb-10">Key Accomplishments</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {portfolioData.accomplishments.map((acc, i) => (
             <div key={i} className="p-6 bg-slate-900 border border-slate-800 rounded-xl">
               <span className="text-blue-500 font-mono text-sm uppercase">{acc.metric}</span>
               <h3 className="text-xl font-semibold mt-2">{acc.title}</h3>
-              <p className="text-slate-400 mt-2">{acc.description}</p>
+              <p className="text-slate-300 mt-2">{acc.description}</p>
             </div>
           ))}
         </div>
