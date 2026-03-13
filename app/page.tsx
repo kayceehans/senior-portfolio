@@ -11,18 +11,11 @@ export default function Home() {
           <p className="text-xl text-slate-400 mb-6">{portfolioData.role}</p>
           <div className="flex gap-4">  
           <button className="bg-blue-600 px-6 py-2 rounded-md">
-          <a href="/resume.pdf" download="Kazeem_Hassan_Resume.pdf" className="border border-slate-700 text-slate-300 px-6 py-2 rounded-md hover:bg-slate-800 transition">View my Resume</a></button>
-            <button className="border border-slate-700 px-6 py-2 rounded-md">
-           
-              <a 
-  href="/contact" 
-  className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition"
->
-  Contact Me
-</a>
-              
-              
-              Contact Me</button>
+          <a href="/resume.pdf" download="Kazeem_Hassan_Resume.pdf" className="border border-slate-700 text-slate-300 px-6 py-2 rounded-md hover:bg-slate-800 transition">View my Resume</a>
+          </button>
+         <button className="bg-blue-600 px-6 py-2 rounded-md">
+          <a href="/contact"  className="border border-slate-700 text-slate-300 px-6 py-2 rounded-md hover:bg-slate-800 transition">Contact Me</a>
+          </button>
           </div>
         </div>
         <div className="relative w-64 h-64">

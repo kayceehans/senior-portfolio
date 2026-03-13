@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { Mail, Phone, MapPin, Linkedin, Github, PhoneCall, Webcam } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, PhoneCall, Webcam, ArrowBigLeft } from "lucide-react";
 
 export default function ContactPage() {
    const form = useRef<HTMLFormElement>(null);
@@ -42,7 +42,7 @@ export default function ContactPage() {
               <div>
                 <p className="text-sm text-slate-500">Website</p>
                 <a href="https://kaz-bit.vercel.app" className="font-semibold text-blue-400 hover:underline">
-                  :Click to visit
+                  Click to visit
                 </a>
               </div>
             </div>
@@ -80,6 +80,7 @@ export default function ContactPage() {
       <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded transition shadow-lg">Send Message</button>
     </form>
         </div>
+        <div> <span><a href="/">Take Me Home! <ArrowBigLeft size={20} /></a></span></div> 
       </div>
     </main>
   );
