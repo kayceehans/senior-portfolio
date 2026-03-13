@@ -53,9 +53,9 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm text-slate-500">Phone</p>
-                <a href="https://kaz-bit.vercel.app" className="font-semibold text-blue-400 hover:underline">
+                <p className="font-semibold text-slate-500">
                   +2348123240434 | +2348095834592
-                </a>
+                </p>
               </div>
             </div>
 
@@ -72,14 +72,14 @@ export default function ContactPage() {
         </div>
 
         {/* Right Side: The Form Component */}
-        <div className="bg-slate-900/50 p-1 rounded-2xl border border-slate-800">
-      <form ref={form} onSubmit={sendEmail} className="space-y-4 bg-blue-950 p-8 rounded-lg">
+     <div className="h-40">
+      <form ref={form} onSubmit={sendEmail} className="space-y-8 bg-blue-950 p-8 rounded-lg">
       <input type="text" name="user_name" placeholder="Full Name" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded focus:outline-none focus:border-blue-400" required />
       <input type="email" name="user_email" placeholder="Email Address" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded focus:outline-none focus:border-blue-400" required />
-      <textarea name="message" placeholder="How can we help?" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded h-32" required />
+      <textarea name="message" placeholder="How can we help?" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded h-64" required />
       <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 rounded transition shadow-lg">Send Message</button>
-    </form>
-        </div>
+      </form>
+     </div>
         <div> <span><a href="/">Take Me Home! <ArrowBigLeft size={20} /></a></span></div> 
       </div>
     </main>
