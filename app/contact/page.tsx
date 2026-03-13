@@ -73,7 +73,7 @@ export default function ContactPage() {
 
         {/* Right Side: The Form Component */}
         <div className="bg-slate-900/50 p-1 rounded-2xl border border-slate-800">
-             <form ref={form} onSubmit={sendEmail} className="space-y-4 bg-blue-950 p-8 rounded-lg">
+      <form ref={form} onSubmit={sendEmail} className="space-y-4 bg-blue-950 p-8 rounded-lg">
       <input type="text" name="user_name" placeholder="Full Name" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded focus:outline-none focus:border-blue-400" required />
       <input type="email" name="user_email" placeholder="Email Address" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded focus:outline-none focus:border-blue-400" required />
       <textarea name="message" placeholder="How can we help?" className="w-full p-3 bg-blue-900 border border-blue-700 text-white rounded h-32" required />
